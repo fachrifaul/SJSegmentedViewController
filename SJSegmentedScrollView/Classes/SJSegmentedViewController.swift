@@ -272,6 +272,9 @@ import UIKit
     var segmentedScrollView = SJSegmentedScrollView(frame: CGRect.zero)
     var segmentScrollViewTopConstraint: NSLayoutConstraint?
     
+    @objc public func getScrollView() -> UIScrollView {
+        return segmentedScrollView
+    }
     
     /**
      Custom initializer for SJSegmentedViewController.
